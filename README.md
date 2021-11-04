@@ -1,2 +1,2 @@
-# Fedora_fo_programmer
+# Fedora_for_programmer
 Fedora Linux для программиста
