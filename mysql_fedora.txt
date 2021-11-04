@@ -1,0 +1,18 @@
+sudo dnf install https://repo.mysql.com//mysql80-community-release-fc34-1.noarch.rpm
+
+sudo dnf install mysql-community-server
+
+sudo systemctl start mysqld
+sudo systemctl enable mysqld
+
+sudo grep 'temporary password' /var/log/mysqld.log
+
+	PassW0Rd++
+
+sudo mysql_secure_installation
+
+sudo dnf install mysql-workbench
+
+---------------
+sudo mysql -u root -p
+sudo rpm -e --nodeps mysql-community-libs mysql-community-common mysql-community-server
